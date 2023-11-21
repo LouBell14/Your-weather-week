@@ -61,7 +61,7 @@ function displayForecast() {
   days.forEach(function (day) {
     forecast.innerHTML = `
   <div class="weather-forecast-day">
-    <div class="weather-forecast-date">Tues</div>
+    <div class="weather-forecast-date">${day}</div>
     <div class="weather-forecast-icon">☀️</div>
     <div class="weather-forecast-temperatures">
       <div class="weather-forecast-temperature">
@@ -77,3 +77,4 @@ let searchFormElement = document.querySelector("#search-form");
 searchFormElement.addEventListener("submit", handleSearchSubmit);
 
 searchCity("Lisbon");
+displayForecast();
