@@ -61,6 +61,8 @@ function getForecast(city) {
 }
 
 function displayForecast(response) {
+  console.log(response.data);
+
   let days = ["Tues", "Weds", "Thurs", "Fri", "Sat"];
   let forecastHtml = "";
 
@@ -80,7 +82,7 @@ function displayForecast(response) {
   </div>
 `;
   });
-  let forecast = document.querySelector("#forecast");
+  let forecastElement = document.querySelector("#forecast");
   forecastElement.innerHTML = forecastHtml;
 }
 let searchFormElement = document.querySelector("#search-form");
