@@ -65,7 +65,7 @@ function displayForecast(response) {
   let forecastHtml = "";
 
   days.forEach(function (day) {
-    forecastHTML =
+    forecastHtml =
       forecastHtml +
       `
   <div class="weather-forecast-day">
